@@ -23,6 +23,7 @@ const FileViewer = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      console.log("useEffect -> Calling fetchFiles()...");
       fetchFiles();
     }, 1000);
 
